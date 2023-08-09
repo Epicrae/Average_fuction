@@ -5,15 +5,17 @@ using namespace std;
 
 int main()
 {
-	int number = 0;
+	int number = 0;// gobal 
+
 	while (number != 11)
 	{
-		//int number;
-		cout << "Please enter a number 1-10 and I will convert it into a Roman numeral:\n";
+		
+		cout << "Please enter a number 1-10 and I will convert it into a Roman numeral 0 to exit:""     " << endl;		
 		cin >> number;
-
-
-
+		if (number == 0) {
+			cout << "Exiting the program.\n";
+			break;  // Break the loop to exit the program
+		}
 		switch (number)
 		{
 		case 1: cout << "I\n";
@@ -36,13 +38,11 @@ int main()
 			break;
 		case 10: cout << "X\n";
 			break;
-		default: cout << "no such number";
+		default: cout << "no such number\n";
 
 		}
-
+		
 	}
-	system("pause");
+
 }
-
-
 
